@@ -4,11 +4,18 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Output: 
-        </p>
+      <header className="bg">
+        <div className="App-header">  
+           <a href="#home" class="active">Home</a>
+           <a href="#news">News</a>
+           <a href="#contact">Contact</a>
+           <a href="#about">About</a>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
+       <button className="initialSearch">Find</button>
       </header>
     </div>
   );
