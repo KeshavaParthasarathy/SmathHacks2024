@@ -1,17 +1,10 @@
 from flask import* 
+import numpy as np 
+import pandas as pd 
+import functions
 
 
 app = Flask(__name__)
-
-@app.route("/123")
-def index123():
-    s = """
-<form method=post action="/suggestedRecipe"> 
-<input type=text name=ingredient value="tomato">
-<input type=submit>
-</form>
-"""
-    return s
 
 @app.route("/")
 def index():
@@ -25,9 +18,20 @@ def contact():
 def menu():
     return render_template("menu.html")
 
-@app.route("/suggestedRecipe", methods=['GET', 'POST'])
-def recipe():
-    ingredient = request.form['ingredient']
+@app.route("/about.html")
+def about():
+    return render_template("about.html")
 
-    s = ingredient.upper()
-    return s
+@app.route("/menu.html", methods=['GET', 'POST'])
+def recipe():
+
+    if request.method == "POST":
+
+        ingredient = request.form['ingredient']
+
+        s = ingredient.upper()
+
+        result = functions.search_recipes_by_ingredients(s)
+
+        return render_template("menu.html", result = result)
+    

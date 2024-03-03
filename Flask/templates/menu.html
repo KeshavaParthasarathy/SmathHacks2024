@@ -208,17 +208,14 @@
 <nav class="navbar navbar-expand-sm bg-light navbar-light">
   <div class="container-fluid">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active1" href="#">News</a>
-      </li>
      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="contact.html">Tips</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Home</a>
+        <a class="nav-link" href="/">Home</a>
       </li>
     </ul>
   </div>
@@ -226,10 +223,20 @@
 
 <div>
   <h1>Menu</h1>
-  <form method=post action="/suggestedRecipe"> 
-    <input type=text name=ingredient value="tomato">
+  <form method=post action="/menu.html"> 
+    <input type=text name=ingredient value="Enter Ingredient Here">
     <input type=submit>
   </form>
+</div>
+
+<div>
+  <h2> List of Recipes:  </h2>
+  <ul>
+    {% for item in result %}
+    <li> {{ item }} </li>
+    {% endfor %}  
+  </ul>
+ 
 </div>
 
 </body>

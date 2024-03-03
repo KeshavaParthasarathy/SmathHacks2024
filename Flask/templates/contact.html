@@ -63,6 +63,7 @@
     body {
       /* The image used */
       background-image:linear-gradient(rgba(218, 160, 115, 0.3),rgba(218, 159, 115, 0.3)),url("https://www.nycfoodpolicy.org/wp-content/uploads/2021/03/shutterstock_645842161-2.jpg");
+      object-fit: fill;
     
       /* Full height */
       height: 100vh; 
@@ -76,7 +77,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 40vh;
   color: white;
   font-size: 10rem;
   font-family:'Times New Roman', Times, serif;
@@ -143,11 +144,20 @@
     
     #box {
       /* Existing styles for the box */
+      padding: 10px 20px;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center-aligns children */
-      justify-content: center; /* Vertically aligns the title in the center */
-      height: 500px; /* Adjust based on content */
+      align-items: left; /* Center-aligns children */
+      /*justify-content: left; /* Vertically aligns the title in the center */
+      width: 1000px;
+      height: 700px; /* Adjust based on content */
+      background: rgba(255, 255, 255, 0.881);
+      border-radius: 15px;
+      top: 30%;
+      left: 20%;
+      position:absolute;
+      z-index: 2;
+      margin: 10px;
     }
     
     .title {
@@ -208,14 +218,11 @@
 <nav class="navbar navbar-expand-sm bg-light navbar-light">
   <div class="container-fluid">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active1" href="#">News</a>
-      </li>
      <li class="nav-item">
-        <a class="nav-link active2" href="#">Contact</a>
+        <a class="nav-link active2" href="contact.html">Tips</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active3" href="#">About</a>
+        <a class="nav-link active3" href="about.html">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active4" href="/">Home</a>
@@ -224,8 +231,22 @@
   </div>
 </nav>
 
-<div>
-  <h1>Contact Info</h1>
+<div class="center1">
+  <h1>Tips</h1>
+</div>
+<div id="box">
+  <h4>Superstar Ingredients:</h4>
+  <p><b>Mushrooms</b> - mushrooms are great for the environment because they don't need much water and are relatively unaffected by pesticides since they're grown indoors.</p>
+  <p><b>Tofu</b> - Tofu which is made from soybeans and water has a much lower impact on the climate than many other staple crops. Additionally, the greenhouse gas emissions created by 1kg of tofu are much less than the greenhouse gas emissions created by meat. So, by using this superstar ingredient you would help to minimize the negative impact that humans have on climate change. </p>
+  <p><b>Oysters</b> - Meat and seafood typically tend to use more water and produce more carbon emissions. So, oysters are a great option for those days when you are craving seafood but still want to do your part and eat sustainably. This is because oysters have fewer emissions than any other seafood. </p>
+  <p><b>Lentils</b> - These legumes are great for the environment as they lower carbon emissions by pulling nitrogen out of the air and depositing it underground. They also require no irrigation to grow and therefore help with the conservation of resources. </p>
+  <p><b>Apples</b> - Some of the most planet-friendly foods are the ones that grow on trees. Apples in particular have virtually zero carbon footprint when grown locally and eaten fresh in season. Additionally, they benefit the environment by taking carbon from the atmosphere to grow, thereby reducing the amount of carbon contributing to the greenhouse effect in the atmosphere and helping have a positive impact on climate change.</p>
+  <br>
+  <h4>Our Favorites with our Superstar Ingredients:</h4>
+  <p>Mushroom and Black Bean Burgers with Balsamic-Glazed Onions</p>
+  <p>Sweet, Spicy and Crunchy Korean Tofu</p>
+  <p>Classic Grilled Oysters</p>
+  <p>Greek Lentil and Spinach Soup with Lemon</p>
 </div>
 
 </body>

@@ -76,7 +76,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 40vh;
   color: white;
   font-size: 10rem;
   font-family:'Times New Roman', Times, serif;
@@ -143,11 +143,19 @@
     
     #box {
       /* Existing styles for the box */
+      padding: 10px 20px;
       display: flex;
       flex-direction: column;
       align-items: center; /* Center-aligns children */
       justify-content: center; /* Vertically aligns the title in the center */
-      height: 500px; /* Adjust based on content */
+      width: 500px;
+      height: 300px; /* Adjust based on content */
+      background: rgba(255, 255, 255, 0.881);
+      border-radius: 15px;
+      top: 30%;
+      left: 35.5%;
+      position:absolute;
+      z-index: 2;
     }
     
     .title {
@@ -193,6 +201,10 @@
         text-align: left;
       }
     }
+
+      .bolded {
+        display: inline-block;
+    }
     /* @keyframes App-logo-spin {
       from {
         transform: rotate(0deg);
@@ -209,24 +221,23 @@
   <div class="container-fluid">
     <ul class="navbar-nav">
      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Tips</a>
+        <a class="nav-link active2" href="contact.html">Tips</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active3" href="about.html">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Home</a>
+        <a class="nav-link active4" href="/">Home</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <div class="center1">
-  <h1>EcoEats</h1>
+  <h1>About EcoEats</h1>
 </div>
-
-<div class="center2">
-  <a class="btn btn-dark" href="menu.html">Find Recipes</a>
+<div id="box">
+  Did you know that in the United States alone, 80 million tons of food are wasted every year? This is equal to 149 BILLION meals and in terms of money, that's $444 billion! Think of how many people this could feed... a LOT right?! But, what if you could do something to help improve these statistics and reduce the amount of food wasted, ultimately ensuring that more people get access to the food that they need. Our solution, Eco Eats! 
 </div>
 
 </body>
