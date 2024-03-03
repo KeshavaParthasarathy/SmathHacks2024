@@ -1,6 +1,6 @@
 import React from "react";
 
-function suggestedRecipe() {
+export const suggestedRecipe = () => {
   return (
     <div>
       <h1>Menu Page</h1>
