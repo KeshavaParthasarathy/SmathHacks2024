@@ -52,7 +52,7 @@
 
 .bg {
   /* The image used */
-  background-image: url("https://www.nycfoodpolicy.org/wp-content/uploads/2021/03/shutterstock_645842161-2.jpg");
+  background-image:linear-gradient(rgba(218, 160, 115, 0.3),rgba(218, 159, 115, 0.3)),url("https://www.nycfoodpolicy.org/wp-content/uploads/2021/03/shutterstock_645842161-2.jpg");
 
   /* Full height */
   height: 100vh; 
@@ -67,7 +67,7 @@
 .topnav {
   background-color: rgba(138, 150, 158, 0.626);
   overflow: hidden;
-  min-height: 8vh;
+  min-height: 5vh;
 
 }
 
@@ -98,6 +98,52 @@
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+
+/*#box {
+  top: 30%;
+  left: 32%;
+  border-radius: 12px;
+  padding: 10px 20px;
+  background: rgb(234, 225, 210);
+  width: 500px;
+  height: 500px;
+  color: rgba(218, 159, 115, 0.849); 
+  position: absolute;
+  z-index: 2; 
+  text-align: center;
+  margin: 0px;
+}*/
+
+#box {
+  /* Existing styles for the box */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-aligns children */
+  justify-content: center; /* Vertically aligns the title in the center */
+  height: 500px; /* Adjust based on content */
+}
+
+.title {
+  /* Existing styles for the title */
+  margin-bottom: 20px; /* Adds space between the title and the buttons */
+}
+
+.button-container {
+  text-align: center; /* Ensures buttons are centered under the title */
+}
+
+.box-button {
+  border-radius: 12px; 
+  padding: 10px 20px; 
+  margin: 0 10px; /* Adds space between buttons */
+  background: linear-gradient(to bottom, rgba(218, 160, 115, 0.8), rgba(218, 159, 115, 0.8)); /* Adjust to match the bg */
+  color: white; 
+  border: none; 
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Aligns buttons next to each other */
 }
 
 @media screen and (max-width: 600px) {
