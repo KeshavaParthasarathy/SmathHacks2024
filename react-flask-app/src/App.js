@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="bg">
-        <div className="App-header">  
+        <div className="topnav">  
            <a href="#home" class="active">Home</a>
            <a href="#news">News</a>
            <a href="#contact">Contact</a>
