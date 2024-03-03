@@ -75,7 +75,7 @@
 .topnav a {
   float: right;
   display: block;
-  direction: ltr;
+  direction: rtl;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
